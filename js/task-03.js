@@ -21,7 +21,11 @@ images.forEach((image) => {
   const listItem = document.createElement("li");
   listItem.insertAdjacentHTML(
     "beforeend",
-    `<img src="${image.url}" alt="${image.alt}" />`
+    `<img src="${image.url}" alt="${image.alt}" width = "600" height = "600"/>`
   );
+
   containerForImages.appendChild(listItem);
 });
+
+containerForImages.style.display = 'flex';
+containerForImages.style.gap = '24px';
